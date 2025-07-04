@@ -16,7 +16,7 @@ class BairdsCounterexampleEnv(gym.Env):
         self._agent_location = None
 
 
-    def reset(self, seed=None, start_state=None):
+    def reset(self, seed=None, start_state=None, options=None):
         # We need the following line to seed self.np_random
         super().reset(seed=seed)
         if start_state is not None:

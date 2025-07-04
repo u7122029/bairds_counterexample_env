@@ -1,6 +1,6 @@
 import unittest
 import gymnasium as gym
-from envs import BairdsCounterexampleEnv
+from bairds_counterexample_env import BairdsCounterexampleEnv
 
 
 class BairdsCounterexampleTests(unittest.TestCase):
