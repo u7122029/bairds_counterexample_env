@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bairds_counterexample_env"
+version = "0.0.1"
+dependencies = [
+  "gymnasium",
+  "pre-commit"
+]
