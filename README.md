@@ -10,6 +10,10 @@ with larger and smaller state spaces. The schema for the environment (from [2]) 
 when possible.
 ## Installation
 ```bash
+pip install git+https://github.com/u7122029/bairds_counterexample_env.git
+```
+OR
+```bash
 git clone https://github.com/u7122029/bairds_counterexample_env.git
 cd bairds_counterexample_env
 pip install -e .
