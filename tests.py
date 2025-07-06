@@ -12,8 +12,16 @@ class BairdsCounterexampleTests(unittest.TestCase):
                 next_state, _, _, _, _ = env.step(0)
                 self.assertEqual(next_state, 0)
 
+    def test_seeding(self):
+        env = BairdsCounterexampleEnv()
 
+        state, _ = env.reset(seed=1)
+        path1 = [env.step(1)[0] for _ in range(1000)]
 
+        state, _ = env.reset(seed=1)
+        path2 = [env.step(1)[0] for _ in range(1000)]
+
+        self.assertEqual(path1, path2)
 
 if __name__ == '__main__':
     unittest.main()

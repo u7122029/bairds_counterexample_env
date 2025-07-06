@@ -1,5 +1,4 @@
 import gymnasium as gym
-import numpy as np
 from gymnasium import spaces
 
 
@@ -37,7 +36,7 @@ class BairdsCounterexampleEnv(gym.Env):
         if action == 0:
             observation = 0
         else:
-            observation = np.random.randint(1, self.num_intermediate_states + 1)
+            observation = self.np_random.integers(1, self.num_intermediate_states + 1)
 
         return observation, 0, False, False, {}
 
